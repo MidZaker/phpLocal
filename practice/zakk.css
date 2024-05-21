@@ -1,0 +1,113 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.Headerdaw{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    color: white;
+}
+
+
+.Header_Button{
+    position:  absolute;
+    top: 0%;
+    right: 2%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.Header_Button button {
+    padding: 20px;
+    background-color: rgb(244, 255, 218);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: 0;
+    transition: 0.5s
+    /* Added transition for smooth change */
+}
+
+.Header_Button button:hover {
+    padding: 20px;
+    background-color: rgb(72, 73, 72);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+   
+}
+
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+
+.tablebody_center{
+
+height: 80vh;
+width:  100vw;
+display: flex;
+justify-content: start;
+align-items: center;
+flex-direction: column;
+
+}
+
+.tablebody_center h6{
+    color: red;
+    font-size: 20px;
+}
+
+
+
+/* Table styles */
+table {
+    width: 80%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+thead {
+    background-color: #333;
+    color: #fff;
+}
+
+th {
+    text-transform: uppercase;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Action column styles */
+td:last-child {
+    text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+}
